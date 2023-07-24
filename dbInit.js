@@ -4,7 +4,7 @@
  * @Autor: MrSong
  * @Date: 2020-09-02 11:44:35
  * @LastEditors: MrSong
- * @LastEditTime: 2021-10-21 12:56:04
+ * @LastEditTime: 2023-07-24 16:33:03
  */
 var sql = require('./connect').sql
 // 创建登录用户
@@ -13,7 +13,7 @@ const PASSWORD = '123456'
 var dbInit = function () {
   sql.connect(function (err) {
     if (err) {
-      console.log('数据库连接失败')
+      console.log('数据库连接失败',err)
     }else {
       console.log('成功连接数据库,正在初始化数据库')
       sql.query('CREATE TABLE person(userId smallint(6) unsigned NOT NULL auto_increment,user varchar(255),password varchar(255),tel varchar(255),email varchar(255),nickname varchar(255),robotname varchar(255),qq varchar(255),name img(255),name varchar(255),visitNum int(10),PRIMARY KEY (`userId`)) ENGINE=InnoDB DEFAULT CHARSET=gbk', function (err) {

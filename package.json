@@ -1,30 +1,32 @@
 {
-  "name": "mr-song"，
-  "version": "1.0.0"，
-  "description": "君陌离"，
-  "author": "MrSong"，
-  "license": "MIT"，
+  "name": "mr-song",
+  "version": "1.0.0",
+  "description": "君陌离",
+  "author": "MrSong",
+  "license": "MIT",
   "scripts": {
-    "sb": "yarn global add pm2"，
-    "init": "node ./dbInit && set NODE_ENV=production && pm2 start ./index.js --watch"
-  }，
+    "sb": "yarn global add pm2",
+    "init": "node ./dbInit.js && set NODE_ENV=production && pm2 start ./index.js --watch",
+    "db": "node ./dbInit.js"
+  },
   "keywords": [
     "君陌离"
-  ]，
+  ],
   "dependencies": {
-    "axios": "^0.19.0"，
-    "mysql": "^2.13.0"
-  }，
+    "axios": "^0.19.0",
+    "mysql": "^2.13.0",
+    "pm2": "^5.3.0"
+  },
   "devDependencies": {
-    "multer": "^1.4.2"，
-    "express": "^4.18.2"
-  }，
+    "express": "^4.18.2",
+    "multer": "^1.4.2"
+  },
   "engines": {
-    "node": ">=8.9"，
+    "node": ">=8.9",
     "npm": ">= 3.0.0"
-  }，
+  },
   "browserslist": [
-    "> 1%"，
+    "> 1%",
     "last 2 versions"
   ]
 }
