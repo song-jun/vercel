@@ -5,9 +5,10 @@
   "author": "MrSong",
   "license": "MIT",
   "scripts": {
-    "sb": "yarn global add pm2",
-    "init": "node ./dbInit.js && set NODE_ENV=production && pm2 start ./index.js --watch",
-    "db": "node ./dbInit.js"
+    "sb": "yarn global add pm2 && yarn",
+    "init": "set NODE_ENV=production && node ./dbInit.js && pm2 start ./index.js --watch",
+    "db": "set NODE_ENV=development && node ./dbInit",
+    "api": "set NODE_ENV=development && node ./index"
   },
   "keywords": [
     "君陌离"
