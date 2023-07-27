@@ -8,7 +8,7 @@ app.get("/mytest", function (req, res) {
 });
 
 // http
-let server = app.listen(1314, function () {
+let server = app.listen(80, function () {
   let port = server.address().port;
   console.log(`应用实例，访问地址为 http://localhost:${port}`);
 });
