@@ -8,7 +8,7 @@
     "sb": "yarn global add pm2 && yarn",
     "init": "set NODE_ENV=production && node ./dbInit.js && pm2 start ./index.js --watch",
     "db": "set NODE_ENV=development && node ./dbInit",
-    "api": "set NODE_ENV=development && node ./index"
+    "build": "yarn global add pm2 && yarn && set NODE_ENV=development && node ./index"
   },
   "keywords": [
     "君陌离"
