@@ -1023,7 +1023,7 @@ app.use(express.static(__dirname + '/images'))
 // api文件夹为启动服务的根目录
 // app.use(express.static(__dirname))
 // http
-var server = app.listen(3000, function () {
+var server = app.listen(1314, function () {
   var port = server.address().port
   console.log(`应用实例，访问地址为 http://localhost:${port}`)
 })
