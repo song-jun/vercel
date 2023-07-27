@@ -1,22 +1,41 @@
 {
   "development": {
+    "host": "1878w5014f.iask.in",
+    "user": "admin",
+    "password": "1314520",
+    "database": "test",
+    "port": "43306",
+    "cmdUrl": "https://j1878c5014.goho.co:9012",
+    "hostUrl": "https://j1878c5014.goho.co",
+    "socketUrl": "https://17245t266o.goho.co",
+    "targetFile": "C:\\Users\\test\\Documents\\admin.songjun520.cn"
+  },
+  "production": {
     "host": "admin.songjun520.cn",
     "user": "blog",
     "password": "8JHtLmR7sLjyRnbE",
     "database": "blog",
     "port": "3306",
-    "cmdUrl": "https://localhost:9012",
-    "hostUrl": "https://localhost:3000",
-    "socketUrl": "https://localhost:1221"
-  },
-  "production": {
-    "host": "containers-us-west-139.railway.app",
-    "user": "root",
-    "password": "3niw81n5o75phKaGQYW2",
-    "database": "railway",
-    "port": "7084",
     "cmdUrl": "https://admin.songjun520.cn:9012",
     "hostUrl": "https://admin.songjun520.cn:3000",
-    "socketUrl": "https://admin.songjun520.cn:1221"
+    "socketUrl": "https://admin.songjun520.cn:1221",
+    "targetFile": "/www/wwwroot/songjun520.cn/originBlog"
+  },
+  "HSK": {
+    "socket": {
+      "targetUrl": "https://17245t266o.goho.co",
+      "localhost": "127.0.0.1",
+      "port": "1221"
+    },
+    "web": {
+      "targetUrl": "https://j1878c5014.goho.co",
+      "localhost": "127.0.0.1",
+      "port": "80"
+    },
+    "mysql": {
+      "TCP": "1878w5014f.iask.in:43306",
+      "localhost": "127.0.0.1",
+      "port": "3306"
+    }
   }
 }

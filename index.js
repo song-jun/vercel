@@ -1023,27 +1023,27 @@ app.use(express.static(__dirname + '/images'))
 // api文件夹为启动服务的根目录
 // app.use(express.static(__dirname))
 // http
-// var server = app.listen(3000, function () {
-//   var port = server.address().port
-//   console.log('应用实例，访问地址为 http://localhost:', port)
-// })
+var server = app.listen(3000, function () {
+  var port = server.address().port
+  console.log(`应用实例，访问地址为 http://localhost:${port}`)
+})
 
 // https
 // 创建https服务器实例
-const https = require('https')
-var key = fs.readFileSync(`${__dirname}/ssl/test.com.key`, 'utf-8')
-var cert = fs.readFileSync(`${__dirname}/ssl/test.com.pem`, 'utf-8')
-// console.log('log',key,cert);
-const credentials = {
-  key: key,
-  cert: cert
-}
-const httpsServer = https.createServer(credentials, app)
+// const https = require('https')
+// var key = fs.readFileSync(`${__dirname}/ssl/test.com.key`, 'utf-8')
+// var cert = fs.readFileSync(`${__dirname}/ssl/test.com.pem`, 'utf-8')
+// // console.log('log',key,cert);
+// const credentials = {
+//   key: key,
+//   cert: cert
+// }
+// const httpsServer = https.createServer(credentials, app)
 
-// 设置https的访问端口号
-const SSLPORT = 3000
+// // 设置https的访问端口号
+// const SSLPORT = 3000
 
-// 启动服务器，监听对应的端口
-httpsServer.listen(SSLPORT, () => {
-  console.log(`HTTPS Server is running on: https://localhost:${SSLPORT}`)
-})
+// // 启动服务器，监听对应的端口
+// httpsServer.listen(SSLPORT, () => {
+//   console.log(`HTTPS Server is running on: https://localhost:${SSLPORT}`)
+// })
