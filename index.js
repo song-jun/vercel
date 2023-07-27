@@ -1,7 +1,7 @@
 let express = require("express");
 let app = express();
 
-app.get("/mytest", function (req, res) {
+app.get("/mytest520", function (req, res) {
   res.send({
     code: 1,
   });
